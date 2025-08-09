@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { PROJECTS } from '../constants';
+import Top_white from '../assets/top_white.png';
+import right_arrow from '../assets/Icons/right-arrow.svg';
+import left_arrow from '../assets/Icons/left-arrow.svg';
 
 const ArrowLeftIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,10 +137,10 @@ export const Works = () => {
               {/* Arrows */}
               <div className="my-8 flex items-center justify-center space-x-4">
                 <button onClick={handleNext}>
-                  <img src="assets/Icons/left-arrow.svg" alt="" />
+                  <img src={left_arrow} alt="" />
                 </button>
                 <button onClick={handleNext}>
-                  <img src="assets/Icons/right-arrow.svg" alt="" />
+                  <img src={right_arrow} alt="" />
                 </button>
               </div>
             </div>
@@ -152,7 +155,7 @@ export const Works = () => {
 
       {/* Background image below projects */}
       <div className="flex justify-center">
-        <img src="assets/Group (1).png" alt="Architectural sketch" className="w-full max-w-2xl h-auto opacity-20" />
+        <img src={Top_white} alt="Architectural sketch" className="w-full max-w-2xl h-auto opacity-20" />
       </div>
 
       {/* Image Preview Modal */}

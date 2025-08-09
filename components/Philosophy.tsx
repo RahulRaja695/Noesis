@@ -1,12 +1,16 @@
 
 import React from 'react';
+import Philosopy_pic from '../assets/philosopy.png';
+import bottom_blue from '../assets/bottom_blue.png';
+import badge from '../assets/Badge.png';
+import mob_badge from '../assets/Icons/Mob-Badge.svg';
 
 export const Philosophy = () => {
   return (
     <section id="philosophy" style={{ backgroundColor: '#327EB2' }} className="text-white pb-20 lg:pb-32">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center">
-             <img src="assets\Group.png" alt="Architectural sketch" className="w-full max-w-2xl h-auto opacity-20" />
+             <img src={bottom_blue} alt="Architectural sketch" className="w-full max-w-2xl h-auto opacity-20" />
         </div>
         <p className='text-2xl'>S T U D I O</p>
 
@@ -20,55 +24,21 @@ export const Philosophy = () => {
           </div>
           <div className="grid grid-cols-1">
             <div className="relative pt-16 flex justify-center">
-              {/* <div className="absolute top-6 h-30 w-30 flex items-center justify-center text-center text-xs font-bold uppercase tracking-wider transform -rotate-10">
-                <img src="assets\Icons\Mob-Badge.svg" alt="" />
-              </div>
-              <div className="absolute top-10 h-24 w-24 flex items-center justify-center text-center text-xs font-bold uppercase tracking-wider transform -rotate-10">
-                <img src="assets\Badge.png" alt="" />
-              </div> */}
               {/* Mobile Badge - visible only on small screens */}
               <div className="absolute top-6 h-30 w-30 flex items-center justify-center text-center text-xs font-bold uppercase tracking-wider transform -rotate-10 block md:hidden">
-                <img src="assets/Icons/Mob-Badge.svg" alt="Mobile Badge" />
+                <img src={mob_badge} alt="Mobile Badge" />
               </div>
 
               {/* Desktop Badge - visible only on medium and larger screens */}
               <div className="absolute top-10 h-24 w-24 flex items-center justify-center text-center text-xs font-bold uppercase tracking-wider transform -rotate-10 hidden md:flex">
-                <img src="assets/Badge.png" alt="Desktop Badge" />
+                <img src={badge} alt="Desktop Badge" />
               </div>
 
-              <img src="assets\about-creative.png" alt="Modern kitchen" className="rounded-lg shadow-xl" />
+              <img src={Philosopy_pic} alt="Modern kitchen" className="rounded-lg shadow-xl" />
               
             </div>
-            {/* <div className="relative pb-16">
-              <img src="assets\about-creative.png" alt="Modern bedroom vanity" className="rounded-lg shadow-xl" />
-            </div> */}
           </div>
         </div>
-        {/* <div className="mt-24 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-            <div className="flex items-center space-x-2 text-left">
-              <p className="text-5xl font-serif font-bold text-brand-highlight">100%</p>
-              <div className="flex flex-col leading-none">
-                <p className="text-sm uppercase tracking-widest text-brand-light">Satisfaction <br />Clients</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-2 text-left">
-              <p className="text-5xl font-serif font-bold text-brand-highlight">47</p>
-              <div className="flex flex-col leading-none text-center">
-                <p className="text-sm uppercase tracking-widest text-brand-light">Employees</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-2 text-left">
-              <p className="text-5xl font-serif font-bold text-brand-highlight">34</p>
-              <div className="flex flex-col leading-none">
-                <p className="text-sm uppercase tracking-widest text-brand-light">Projects Completed <br />in 60 Countries</p>
-              </div>
-            </div>
-        </div> */}
-        {/* <div className="flex justify-center mt-20">
-             <img src="./assets/image3.png" alt="Architectural sketch" className="w-full max-w-2xl h-auto opacity-20" />
-        </div> */}
       </div>
     </section>
   );
